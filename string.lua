@@ -53,8 +53,10 @@ assert('hello, %s' % 'lua' == 'hello, lua')
 assert(string.gsub('hello, lua', 'l', 'L') == 'heLLo, Lua')
 assert(string.gsub('hello, lua', 'l', function(_) return 'L' end) == 'heLLo, Lua')
 
-local name = "halo 👻"
+-- string iterate
+--
 
+local name = "halo 👻"
 
 print('=>`%s` iterate:' % name)
 for i = 1, #name do

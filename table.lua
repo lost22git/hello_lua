@@ -27,3 +27,9 @@ assert(table.size({}) == 0)
 assert(table.size({ 1 }) == 1)
 assert(table.size({ 1, 1, nil }) == 2)
 assert(table.size({ 1, nil, 1 }) == 2)
+
+-- table concat
+--
+
+assert(table.concat({'src', 'main', 'hello.lua'}, '/') == 'src/main/hello.lua')
+
